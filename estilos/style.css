@@ -89,7 +89,7 @@ form > a.botao {
     margin-top: 5px;
 }
 
-form > a.botao > i {
+form > a.botao > span {
     font-size: 0.9em;
 }
 
@@ -104,8 +104,31 @@ form > div.campo {
     height: 40px;
     border-radius: 4px;
     margin: 5px 0px;
+    border: 2px solid black;
 }
 
 div.campo > label {
     display: none;
+}
+
+div.campo > span {
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #f394c7;
+    font-size: 1em;
+    height: 100%;
+    border: 0px;
+    border-radius: 6px;
+    padding: 5px;
+    width: calc(100% - 45px);
+    transform: translateY(-13px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
 }
